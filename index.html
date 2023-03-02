@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCHOOL RESULT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <script src="bootstrap.js"></script>
+    <script src="jquery-3.6.3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container main">
+        <!-- add button  -->
+        <div class="savebtn">
+            <td>
+                <button class="bn1 addbtn ms-auto">ADD</button>
+            </td>
+        </div>
+        <!-- main table start -->
+        <div class="main-table">
+            <div id="no-more-tables">
+                <table class="table table1" id="myTable">
+                    <thead class="  text-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>SUBJECT</th>
+                            <th>MARKS</th>
+                            <th>ACTION</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-light">
+                        <tr>
+                            <td data-title="ID" class="idno"></td>
+                            <td data-title="NAME">
+                                <input type="text" name="fname" class="fname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="SUBJECT">
+                                <input type="text" name=" subname" class="subname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="MARKS">
+                                <input type="number" name="marks" class="mrks" max="100" autocomplete="off"
+                                    onkeydown="return event.keyCode !== 69" id="mrks" />
+                            </td>
+                            <td data-title="ACTION" class="d-flex flex-wrap justify-content-center">
+                                <button class="btnpass bn1" type="button">pass</button>
+                                <button class="btnfail bn1" type="button">fail</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="ID" class="idno"></td>
+                            <td data-title="NAME">
+                                <input type="text" name="fname" class="fname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="SUBJECT">
+                                <input type="text" name=" subname" class="subname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="MARKS">
+                                <input type="number" name="marks" class="mrks" max="100" autocomplete="off"
+                                    onkeydown="return event.keyCode !== 69" id="mrks" />
+                            </td>
+                            <td data-title="ACTION" class="d-flex flex-wrap justify-content-center">
+                                <button class="btnpass bn1" type="button">pass</button>
+                                <button class="btnfail bn1" type="button">fail</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="ID" class="idno"></td>
+                            <td data-title="NAME">
+                                <input type="text" name="fname" class="fname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="SUBJECT">
+                                <input type="text" name=" subname" class="subname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="MARKS">
+                                <input type="number" name="marks" class="mrks" max="100" autocomplete="off"
+                                    onkeydown="return event.keyCode !== 69" id="mrks" />
+                            </td>
+                            <td data-title="ACTION" class="d-flex flex-wrap justify-content-center">
+                                <button class="btnpass bn1" type="button">pass</button>
+                                <button class="btnfail bn1" type="button">fail</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="ID" class="idno"></td>
+                            <td data-title="NAME">
+                                <input type="text" name="fname" class="fname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="SUBJECT">
+                                <input type="text" name=" subname" class="subname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="MARKS">
+                                <input type="number" name="marks" class="mrks" max="100" autocomplete="off"
+                                    onkeydown="return event.keyCode !== 69" id="mrks" />
+                            </td>
+                            <td data-title="ACTION" class="d-flex flex-wrap justify-content-center">
+                                <button class="btnpass bn1" type="button">pass</button>
+                                <button class="btnfail bn1" type="button">fail</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-title="ID" class="idno"></td>
+                            <td data-title="NAME">
+                                <input type="text" name="fname" class="fname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="SUBJECT">
+                                <input type="text" name=" subname" class="subname valid" autocomplete="off" />
+                            </td>
+                            <td data-title="MARKS">
+                                <input type="number" name="marks" class="mrks" max="100" autocomplete="off"
+                                    onkeydown="return event.keyCode !== 69" id="mrks" />
+                            </td>
+                            <td data-title="ACTION" class="d-flex flex-wrap justify-content-center">
+                                <button class="btnpass bn1" type="button">pass</button>
+                                <button class="btnfail bn1" type="button">fail</button>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="savebtn">
+                <button class="bn1  save">save</button>
+            </div>
+        </div>
+        <!-- main table end -->
+        <!-- search button  -->
+        <div class="search-box  mb-3" id="search">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" id="searchInput" class="input-search" placeholder="Search"
+                autocomplete="off" />
+        </div>
+    </div>
+
+    <!-- result table  -->
+    <div class="container res mt-3 table-responsive" id="resultdiv">
+        <table id="result" class="result w-100 mt-3 table-responsive"></table>
+    </div>
+    <!-- percentage table -->
+    <div class="container percentage mt-3 table-responsive mb-5  " id="percdiv">
+        <table id="perc" class="result w-100 mt-3 table-responsive"></table>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

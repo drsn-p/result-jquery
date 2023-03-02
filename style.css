@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  font-family: poppins;
+  font-size: 20px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+thead,
+td {
+  text-align: center;
+
+}
+
+.table1 {
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: transparent !important;
+}
+
+tr:has(.fail) {
+  background-color: red;
+}
+
+.res {
+  margin: 20px 20px 70px 20px;
+}
+
+.result {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: transparent;
+  color: white;
+
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.bn1 {
+  background: transparent;
+  display: inline-block;
+  padding: 0.6em 1.7em;
+  border: none;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: 300;
+  text-align: center;
+  transition: all 0.2s;
+  color: white;
+}
+
+.bn1:hover {
+  color: black;
+  background-color: white;
+}
+
+input {
+  border: 2px solid;
+  border-radius: 20px;
+  text-align: center;
+}
+
+input:hover {
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+table {
+  counter-reset: id;
+}
+
+.idno::after {
+  counter-increment: id;
+  content: counter(id);
+}
+
+
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.input-search {
+  height: 50px;
+  width: 130px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: transparent;
+  padding-right: 40px;
+  color: white;
+}
+
+.input-search::placeholder {
+  color: black;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: white;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-search:focus~.input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  border: transparent;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+ 
+.activepass{
+  background-color: blue;
+  color: white;
+  display: inline-block;
+  padding: 0.6em 1.7em;
+  border: none;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: 300;
+  text-align: center;
+}
+.activefail{
+  background-color: red;
+  color: white;
+  display: inline-block;
+  padding: 0.6em 1.7em;
+  border: none;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: 300;
+  text-align: center;
+}
+
+
+@media only screen and (max-width:1270px) {
+
+  #no-more-tables tbody,
+  #no-more-tables tr,
+  #no-more-tables td {
+      display: block;
+  }
+
+  #no-more-tables thead tr {
+      display: none;
+  }
+
+  #no-more-tables td {
+      position: relative;
+      padding-left: 40%;
+      border: none;
+      border-bottom: 1px solid #eee;
+  }
+
+  #no-more-tables td input {
+      width: -webkit-fill-available;
+  }
+  
+
+  #no-more-tables td:before {
+      content: attr(data-title);
+      position: absolute;
+      left: 6px;
+      font-weight: bold;
+  }
+
+  #no-more-tables tr {
+      border-bottom: 1px solid #ccc;
+  }
+  .savebtn button{
+     align-content: center;
+  
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+ 
+
+}
+@media screen and (max-width:768px){
+    
+  .savebtn button{
+    min-width: 100%;
+  
+}
+}
+
+ .fail {
+  background-color: red;
+}
+
+
+html body {
+  background: white;
+  background-image: url(night-trees-stars-in-sky-minimalism-artwork-5k-q5.jpg);
+  
+   
+  background-position: center ;
+  
+ 
+  background-repeat: no-repeat;
+  
+ 
+  background-attachment: fixed;
+  
+ 
+  background-size: cover;
+  background-color:#464646;
+   
+   
+} 
